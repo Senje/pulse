@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'MuseoModerno';
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.red-underline {
+    color: #ff0000;
+    text-transform: uppercase;
+    text-decoration: underline
+}
+
+@import './blocks/promo';
+@import './blocks/header';
+@import './blocks/buttons';
+@import './blocks/advantages';
+@import './blocks/titles';
+@import './blocks/consultation';
+
+// Media queries
+@import './media.scss'

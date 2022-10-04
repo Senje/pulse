@@ -1,0 +1,23 @@
+@media (max-width: 650px) {
+    .header {
+        flex-direction: column;
+
+        div+div {
+            margin-top: 10px;
+        }
+    }
+
+    .promo__wrapper {
+        align-items: center;
+        text-align: center;
+    }
+
+    .advantages__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .promo__icons {
+        width: auto;
+    }
+}

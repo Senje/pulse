@@ -1,0 +1,39 @@
+.consultation {
+    height: 680px;
+    background: url('../img/bg2.jpg') no-repeat center/cover;
+    padding-top: 100px;
+    padding-bottom: 92px;
+
+    &__desc {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+    &__form {
+        margin-top: 36px;
+
+        &-input {
+            display: block;
+            width: 303px;
+            height: 54px;
+            padding-left: 21px;
+            border-radius: 5px;
+            border: none;
+
+            &:focus-visible {
+                border: none;
+                outline: none;
+            }
+        }
+
+        input+input {
+            margin-top: 11px;
+        }
+    }
+
+    .button {
+        margin-top: 17px;
+    }
+}
