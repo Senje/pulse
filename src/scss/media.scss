@@ -6,6 +6,20 @@
             margin-top: 10px;
         }
     }
+    .carousel {
+        .tns-outer {
+            position: relative;
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    .carousel__item {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 
     .promo__wrapper {
         align-items: center;

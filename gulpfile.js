@@ -5,6 +5,7 @@ const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename');
 const clean = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
+const validator = require('gulp-html');
 
 // Static server
 gulp.task('browser-sync', function () {
@@ -30,6 +31,11 @@ gulp.task('styles', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('html', function () {
+    return gulp.src("./src/*.html")
+        .pipe(validator())
+});
+
 gulp.task('js', function () {
     gulp.src('./src/*.js')
         .pipe(uglify())
@@ -40,7 +46,7 @@ gulp.task('js', function () {
 gulp.task('watch', function () {
     gulp.watch('src/scss/**/*.+(scss|sass)', gulp.parallel('styles'));
     gulp.watch('src/*.js').on('change', gulp.parallel('js', browserSync.reload));
-    gulp.watch('src/*.html').on('change', browserSync.reload);
+    gulp.watch('src/*.html').on('change', gulp.parallel('html', browserSync.reload));
 });
 
 gulp.task('default', gulp.parallel('watch', 'browser-sync', 'styles', 'js'))

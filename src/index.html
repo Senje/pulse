@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/fonts.min.css">
-    <link rel="stylesheet" href="./assets/css/main.min.css">
-    <link rel="stylesheet" href="./assets/css/media.min.css">
-    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="preload" href="./assets/css/fonts.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="./assets/css/main.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="./assets/css/media.min.css" media="screen and (max-width:650px)">
+    <link rel="preload" href="./assets/css/tiny-slider.css" as="style" onload="this.rel='stylesheet'">
     <title>Document</title>
 </head>
 
@@ -97,10 +97,10 @@
                 и мы перезвоним вам в течении 10 минут
             </div>
             <form action="/" class="consultation__form" method="get">
-                <input type="text" name="name" required class="consultation__form-input" placeholder="Ваше имя">
-                <input type="text" name="phone" required class="consultation__form-input" type="number"
+                <input name="name" required class="consultation__form-input" placeholder="Ваше имя">
+                <input name="phone" required class="consultation__form-input" type="number"
                     placeholder="Ваше телефон">
-                <input type="text" name="email" required class="consultation__form-input" type="email"
+                <input name="email" required class="consultation__form-input" type="email"
                     placeholder="Ваше E-mail">
                 <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -109,14 +109,14 @@
     <section class="carousel">
         <div class="container">
             <div class="carousel__inner">
-                <div class="carousel__item"><img src="./assets/img/slide1.png" alt="slide1"></div>
-                <div class="carousel__item"><img src="./assets/img/slide2.png" alt="slide2"></div>
-                <div class="carousel__item"><img src="./assets/img/slide3.png" alt="slide3"></div>
+                <div class="carousel__item"><img src="./assets/img/slide1.webp" alt="slide1"></div>
+                <div class="carousel__item"><img src="./assets/img/slide2.webp" alt="slide2"></div>
+                <div class="carousel__item"><img src="./assets/img/slide3.webp" alt="slide3"></div>
             </div>
         </div>
     </section>
-    <script src="./assets/js/jquery-3.6.1.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
+    <!-- <script src="./assets/js/jquery-3.6.1.min.js"></script> -->
+    <script src="./assets/js/tiny-slider.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

@@ -1,19 +1,14 @@
 .carousel {
     padding: 91px 0;
 
-    &__inner {
+    .tns-outer {
         position: relative;
         width: 750px;
         margin: 0 auto;
-
-        img {
-            width: 750px;
-            height: 580px;
-        }
     }
 
-    .slick-prev,
-    .slick-next {
+    [data-controls=prev],
+    [data-controls=next] {
         position: absolute;
         border: none;
         background-color: transparent;
@@ -28,7 +23,7 @@
         }
     }
 
-    .slick-next {
+    [data-controls=next] {
         right: -66px;
         left: auto;
     }

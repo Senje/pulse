@@ -1,8 +1,11 @@
+.promo.visible {
+    background: url('../img/bg.webp') no-repeat (center/cover);
+}
 .promo {
     min-height: 650px;
     padding-top: 21px;
     padding-bottom: 93px;
-    background: url('../img/bg.jpg') no-repeat (center/cover);
+    background-color: #adadad;
 
     &__wrapper {
         display: flex;
